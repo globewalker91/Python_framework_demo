@@ -1,3 +1,5 @@
 pages/
 .pytest_cache/
 geckodriver
+geckodriver.log
+Tests/_pycache_/
