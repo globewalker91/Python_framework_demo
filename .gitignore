@@ -3,3 +3,4 @@ pages/
 geckodriver
 geckodriver.log
 Tests/_pycache_/
+framework_demo/
