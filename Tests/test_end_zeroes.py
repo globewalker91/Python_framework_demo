@@ -1,18 +1,25 @@
-import pytest
+import unittest
 
-def end_zeros(num: int) -> int:
-    # your code here
-    leading = str(num).rstrip("0")
-    return len(str(num).replace(str(leading),''))
 
-print(end_zeros(1))
-print(end_zeros(10))
-print(end_zeros(1200))
+class TestEndZeros(unittest.TestCase):
+    @staticmethod
+    def end_zeros(num: int) -> int:
+        """
+        helper function strips trailing zeros
 
-def test_max():
-    assert end_zeros(1) == 0
-    assert end_zeros(10) == 1
-    assert end_zeros(1200) == 2
+        sample usage:
+        print(end_zeros(1))
+        print(end_zeros(10))
+        print(end_zeros(1200))
 
-def test_intentional_fail_1():
-    assert True == False
+        """
+        leading = str(num).rstrip("0")
+        return len(str(num).replace(str(leading), ''))
+
+    def test_max(self):
+        self.assertEqual(self.end_zeros(1), 0)
+        self.assertEqual(self.end_zeros(10), 1)
+        self.assertEqual(self.end_zeros(1200), 2)
+
+    def test_intentional_fail_1(self):
+        self.assertTrue(False)
