@@ -15,6 +15,7 @@ print(replace_first([1]))
 print(replace_first([]))
 
 def test_max():
+    """Validates that the first item is moved to the end"""
     assert replace_first([1, 2, 3, 4]) == [2, 3, 4, 1]
     assert replace_first([1]) == [1]
     assert replace_first([]) == []

@@ -15,3 +15,11 @@ def test_checkio():
 def test_intentional_fail_4():
     assert True == False
 
+@pytest.mark.xfail
+def test_fail_expected():
+    assert True == False
+
+@pytest.mark.skip
+def test_skip():
+    assert True == False
+
