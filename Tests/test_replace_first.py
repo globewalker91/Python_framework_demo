@@ -19,5 +19,5 @@ def test_max():
     assert replace_first([1]) == [1]
     assert replace_first([]) == []
 
-def test_intentional_fail_6():
+def test_intentional_fail_3():
     assert True == False
