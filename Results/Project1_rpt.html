@@ -420,7 +420,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>Project1_rpt.html</h1>
-    <p>Report generated on 04-May-2020 at 12:24:40 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 04-May-2020 at 15:05:52 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -428,15 +428,15 @@ function filter_table(elem) {
         <td>{"pluggy": "0.13.1", "py": "1.8.1", "pytest": "5.4.1"}</td></tr>
       <tr>
         <td>Platform</td>
-        <td>Windows-10-10.0.18362-SP0</td></tr>
+        <td>Darwin-18.7.0-x86_64-i386-64bit</td></tr>
       <tr>
         <td>Plugins</td>
         <td>{"html": "2.1.1", "metadata": "1.8.0"}</td></tr>
       <tr>
         <td>Python</td>
-        <td>3.8.2</td></tr></table>
+        <td>3.7.6</td></tr></table>
     <h2>Summary</h2>
-    <p>11 tests ran in 0.33 seconds. </p>
+    <p>11 tests ran in 0.11 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">1 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">5 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">1 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -451,79 +451,70 @@ function filter_table(elem) {
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-name">Tests/test_Days_Between.py::test_intentional_fail_2</td>
+          <td class="col-name">Tests/test_Days_Between.py::TestDaysBetween::test_intentional_fail_2</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">def test_intentional_fail_2():<br/>&gt;       assert True == False<br/><span class="error">E       assert True == False</span><br/><span class="error">E         +True</span><br/><span class="error">E         -False</span><br/><br/>Tests\test_Days_Between.py:24: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;test_Days_Between.TestDaysBetween testMethod=test_intentional_fail_2&gt;<br/><br/>    def test_intentional_fail_2(self):<br/>&gt;       self.assertTrue(False)<br/><span class="error">E       AssertionError: False is not true</span><br/><br/>Tests/test_Days_Between.py:27: AssertionError<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-name">Tests/test_absolute_sorting.py::test_intentional_fail_4</td>
+          <td class="col-name">Tests/test_absolute_sorting.py::TestAbsoluteSorting::test_intentional_fail_4</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">def test_intentional_fail_4():<br/>&gt;       assert True == False<br/><span class="error">E       assert True == False</span><br/><span class="error">E         +True</span><br/><span class="error">E         -False</span><br/><br/>Tests\test_absolute_sorting.py:16: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;test_absolute_sorting.TestAbsoluteSorting testMethod=test_intentional_fail_4&gt;<br/><br/>    def test_intentional_fail_4(self):<br/>&gt;       self.assertTrue(False)<br/><span class="error">E       AssertionError: False is not true</span><br/><br/>Tests/test_absolute_sorting.py:25: AssertionError<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-name">Tests/test_end_zeroes.py::test_intentional_fail_1</td>
+          <td class="col-name">Tests/test_end_zeroes.py::TestEndZeros::test_intentional_fail_1</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">def test_intentional_fail_1():<br/>&gt;       assert True == False<br/><span class="error">E       assert True == False</span><br/><span class="error">E         +True</span><br/><span class="error">E         -False</span><br/><br/>Tests\test_end_zeroes.py:18: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;test_end_zeroes.TestEndZeros testMethod=test_intentional_fail_1&gt;<br/><br/>    def test_intentional_fail_1(self):<br/>&gt;       self.assertTrue(False)<br/><span class="error">E       AssertionError: False is not true</span><br/><br/>Tests/test_end_zeroes.py:25: AssertionError<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-name">Tests/test_max_digit.py::test_intentional_fail_5</td>
+          <td class="col-name">Tests/test_max_digit.py::TestMaxDigit::test_intentional_fail_5</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">def test_intentional_fail_5():<br/>&gt;       assert True == False<br/><span class="error">E       assert True == False</span><br/><span class="error">E         +True</span><br/><span class="error">E         -False</span><br/><br/>Tests\test_max_digit.py:21: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;test_max_digit.TestMaxDigit testMethod=test_intentional_fail_5&gt;<br/><br/>    def test_intentional_fail_5(self):<br/>&gt;       self.assertTrue(False)<br/><span class="error">E       AssertionError: False is not true</span><br/><br/>Tests/test_max_digit.py:29: AssertionError<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-name">Tests/test_replace_first.py::test_intentional_fail_3</td>
+          <td class="col-name">Tests/test_replace_first.py::TestReplaceFirst::test_intentional_fail_3</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">def test_intentional_fail_3():<br/>&gt;       assert True == False<br/><span class="error">E       assert True == False</span><br/><span class="error">E         +True</span><br/><span class="error">E         -False</span><br/><br/>Tests\test_replace_first.py:24: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;test_replace_first.TestReplaceFirst testMethod=test_intentional_fail_3&gt;<br/><br/>    def test_intentional_fail_3(self):<br/>&gt;       self.assertTrue(False)<br/><span class="error">E       AssertionError: False is not true</span><br/><br/>Tests/test_replace_first.py:30: AssertionError<br/></div></td></tr></tbody>
       <tbody class="xfailed results-table-row">
         <tr>
           <td class="col-result">XFailed</td>
-          <td class="col-name">Tests/test_absolute_sorting.py::test_fail_expected</td>
+          <td class="col-name">Tests/test_absolute_sorting.py::TestAbsoluteSorting::test_fail_expected</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">@pytest.mark.xfail<br/>    def test_fail_expected():<br/>&gt;       assert True == False<br/><span class="error">E       assert True == False</span><br/><span class="error">E         +True</span><br/><span class="error">E         -False</span><br/><br/>Tests\test_absolute_sorting.py:20: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;test_absolute_sorting.TestAbsoluteSorting testMethod=test_fail_expected&gt;<br/><br/>    @pytest.mark.xfail<br/>    def test_fail_expected(self):<br/>&gt;       self.assertTrue(False)<br/><span class="error">E       AssertionError: False is not true</span><br/><br/>Tests/test_absolute_sorting.py:29: AssertionError<br/></div></td></tr></tbody>
       <tbody class="skipped results-table-row">
         <tr>
           <td class="col-result">Skipped</td>
-          <td class="col-name">Tests/test_absolute_sorting.py::test_skip::setup</td>
+          <td class="col-name">Tests/test_absolute_sorting.py::TestAbsoluteSorting::test_skip::setup</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;Tests\\test_absolute_sorting.py&#x27;, 22, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+            <div class="log">(&#x27;Tests/test_absolute_sorting.py&#x27;, 31, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">Tests/test_Days_Between.py::test_days_diff</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Tests/test_absolute_sorting.py::test_checkio</td>
+          <td class="col-name">Tests/test_Days_Between.py::TestDaysBetween::test_days_diff</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
@@ -532,7 +523,7 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">Tests/test_end_zeroes.py::test_max</td>
+          <td class="col-name">Tests/test_absolute_sorting.py::TestAbsoluteSorting::test_checkio</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
@@ -541,7 +532,7 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">Tests/test_max_digit.py::test_max</td>
+          <td class="col-name">Tests/test_end_zeroes.py::TestEndZeros::test_max</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
@@ -550,7 +541,16 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">Tests/test_replace_first.py::test_max</td>
+          <td class="col-name">Tests/test_max_digit.py::TestMaxDigit::test_max</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_replace_first.py::TestReplaceFirst::test_max</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>

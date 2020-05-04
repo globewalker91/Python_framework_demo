@@ -1,25 +1,33 @@
 import pytest
+import unittest
 
-def checkio(numbers_array: tuple) -> list:
-    return sorted(numbers_array, key = abs)
 
-print(checkio((-20, -5, 10, 15)))
-print(checkio((1, 2, 3, 0)))
-print(checkio((-1, -2, -3, 0)))
+class TestAbsoluteSorting(unittest.TestCase):
+    @staticmethod
+    def checkio(numbers_array: tuple) -> list:
+        """
+        helper function used returns ints sorted by abs value
 
-def test_checkio():
-    assert checkio((-20, -5, 10, 15)) == [-5, 10, 15, -20]
-    assert checkio((1, 2, 3, 0)) == [0, 1, 2, 3]
-    assert checkio((-1, -2, -3, 0)) == [0, -1, -2, -3]
+        sample usage:
+        print(self.checkio((-20, -5, 10, 15)))
+        print(self.checkio((1, 2, 3, 0)))
+        print(self.checkio((-1, -2, -3, 0)))
 
-def test_intentional_fail_4():
-    assert True == False
+        """
+        return sorted(numbers_array, key=abs)
 
-@pytest.mark.xfail
-def test_fail_expected():
-    assert True == False
+    def test_checkio(self):
+        self.assertEqual(self.checkio((-20, -5, 10, 15)), [-5, 10, 15, -20])
+        self.assertEqual(self.checkio((1, 2, 3, 0)), [0, 1, 2, 3])
+        self.assertEqual(self.checkio((-1, -2, -3, 0)), [0, -1, -2, -3])
 
-@pytest.mark.skip
-def test_skip():
-    assert True == False
+    def test_intentional_fail_4(self):
+        self.assertTrue(False)
 
+    @pytest.mark.xfail
+    def test_fail_expected(self):
+        self.assertTrue(False)
+
+    @pytest.mark.skip
+    def test_skip(self):
+        self.assertTrue(False)
